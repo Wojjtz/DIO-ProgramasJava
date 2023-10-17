@@ -42,5 +42,6 @@ public class Contador {
     }
 
     static class ParametrosInvalidosException extends Exception {
+        
     }
 }
