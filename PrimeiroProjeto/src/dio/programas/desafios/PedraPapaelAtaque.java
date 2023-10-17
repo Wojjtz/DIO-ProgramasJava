@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package dio.app;
+package dio.programas.desafios;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author rodol
  */
-public class DesafioPedraPapaelAtaque {
+public class PedraPapaelAtaque {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
