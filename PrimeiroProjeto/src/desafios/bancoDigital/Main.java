@@ -4,6 +4,11 @@
  */
 package desafios.bancoDigital;
 
+import desafios.bancoDigital.Cliente.Cliente;
+import desafios.bancoDigital.Contas.Conta;
+import desafios.bancoDigital.Contas.ContaCorrente;
+import desafios.bancoDigital.Contas.ContaPoupanca;
+
 /**
  *
  * @author rodol

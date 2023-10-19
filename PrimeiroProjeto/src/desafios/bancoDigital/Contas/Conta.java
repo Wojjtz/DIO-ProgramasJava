@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package desafios.bancoDigital;
+package desafios.bancoDigital.Contas;
+
+import desafios.bancoDigital.Cliente.Cliente;
 
 /**
  *
@@ -11,16 +13,15 @@ package desafios.bancoDigital;
 public abstract class Conta implements IConta {
 
     protected static final int agenciaPadrao = 1;
-
+    protected static int sequencial = 1;
+    
     protected int agencia;
     protected int numero;
     protected double saldo;
-    protected Cliente cliente; 
-    
-    private static int sequencial = 1;
+    protected Cliente cliente;
 
     public Conta(Cliente cliente) {
-        this.agencia = agenciaPadrao; 
+        this.agencia = agenciaPadrao;
         this.numero = sequencial++;
         this.cliente = cliente;
     }
@@ -48,12 +49,14 @@ public abstract class Conta implements IConta {
             System.out.println("Valor indisponível.");
         }
     }
-    
-    protected void imprimirInfosComuns(){
+
+    protected void imprimirInfosComuns() {
+        System.out.println(String.format("Titular: ", this.cliente.getNome()));
         System.out.println(String.format("Agência: %d", this.agencia));
         System.out.println(String.format("Número: %d", this.numero));
         System.out.println(String.format("Saldo: %.2f", this.saldo));
     }
+
     public int getAgencia() {
         return agencia;
     }
