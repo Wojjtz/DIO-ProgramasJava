@@ -13,7 +13,7 @@ import conceitoInterface.equipamentos.impressora.Impressora;
  * @author rodol
  */
 public class EquipamentoMultifuncao implements Copiadora, Digitalizadora, Impressora{
-
+     
     @Override
     public void copiar() {
         System.out.println("COPIANDO MULTIFUNÇÂO");
@@ -28,5 +28,4 @@ public class EquipamentoMultifuncao implements Copiadora, Digitalizadora, Impres
     public void imprimir() {
         System.out.println("IMPRIMINDO MULTIFUNÇÂO");
     }
-    
 }
